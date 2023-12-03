@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+a, nav {
+    text-decoration: none;
+    outline:none;
+}
+
+html, 
+body, main {
+    height: 100%;
+    width: 100%;
+    font-style: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav, header, footer, aside { display: block;}
+
+a {
+    border-color: inherit;
+    color: inherit;
+}
+
+.part-1 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 56px repeat(4, 1fr) 56px;
+    grid-template-rows: 75px 276px 120px 270px 295px;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+}
+
+header {
+    grid-area: 1/4/2/7;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 40px 56px 0px auto;
+}
+
+ul :nth-child(1) {
+    padding-top: 8px; 
+}
+
+ul :nth-child(2) {
+    padding: 8px 8px 8px 40px; 
+}
+
+ul :nth-child(3) {
+    padding: 8px 20px;
+    background-color:  #FFF;
+    color:  #156963;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+}
+
+ul :nth-child(4) {
+    padding: 8px 20px;
+    color: #FFF;
+    background-color:  #156963;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+
+}
+
+aside {
+    grid-area: 1/1/5/4;
+    width: 608px;
+    height: 912.95px;
+    flex-shrink: 0;
+}
+
+.kembang {
+    grid-area: 2/4/3/7;
+    padding-top: 110px;
+    padding-right: 72px;
+    color:  #156963;
+    font-family: Montserrat;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.kembang-2 {
+    grid-area: 3/4/4/7;
+    padding: 24px 102px 110px 0px;
+    color: #2C1500;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+
+.previous {
+    grid-area: 4/4/5/5;
+    margin-top: 110px;
+}
+
+.previous img {
+    padding-right: 8px;
+}
+
+.previous :first-child {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.previous :last-child {
+    color: #156963;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 13px;
+}
+
+.next {
+    grid-area: 4/5/5/7;
+    margin-top: 110px;
+    flex-shrink: 0;
+    background: #156963;
+}
+
+
+
+.next :nth-child(1) {
+    color: #F2F2F2;
+    font-family: Montserrat;
+    font-size: 24px;
+    padding-bottom: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.next :nth-child(2) {
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container {
+    grid-area: 5/2/6/6;
+    display: flex;
+    flex-direction: row;
+    margin-top: 130px;
+    justify-content: space-between;
+    gap: 32px;
+}
+.box-1 {
+    align-self: center;
+}
+
+.box-1 :nth-child(1) {
+    color: var(--akana-green, #156963);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+}
+
+.box-1 :nth-child(2) {
+    color: var(--kq-black, #2C1500);
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 160% */
+}
+
+.vector {
+    grid-area: 6/2/7/6;
+}
+
+.vector p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 83px;
+}
+
+.vector img {
+    padding: 16px 56px;
+}
+
+.kaktus {
+    grid-area: 7/2/8/6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.kaktus img {
+    background: lightgrey 50%;
+}
+
+.kaktus-p {
+    grid-area: 8/2/9/6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.kaktus-p div {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
